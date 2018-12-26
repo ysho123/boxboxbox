@@ -1,0 +1,32 @@
+<view class="index">
+  <view class="index_container" wx:for="{{listdata}}" wx:key="index">
+    <form bindsubmit="todetails" report-submit="true">
+      <view class="list_item" wx:if="{{item.type==1 || item.type==5}}">
+        <button wx:if="{{item.type==1}}" class="formBtn" plain="true" form-type='submit' open-type='getUserInfo' bindgetuserinfo='getUserInfo' data-id="{{item.id}}" data-type="{{item.type}}" data-page="{{item.page}}" data-title="{{item.title}}"></button>
+        <!-- type:5 跳转外部h5 -->
+        <button wx:if="{{item.type==5}}" class="formBtn" plain="true" form-type='submit' open-type='getUserInfo' bindgetuserinfo='getUserInfo' data-id="{{item.id}}" data-type="{{item.type}}" data-web_src="{{item.h5_src}}" data-title="{{item.title}}"></button>
+        <view class="list_bg">
+          <image class="banner" src="{{item.banner}}"></image>
+          <view class="bg_title">{{item.intro}}</view>
+        </view>
+        <view class="list_info">
+          <image class="logo" src="{{item.logo}}"></image>
+          <view class="list_title">{{item.title}}</view>
+          <view class="list_btn">马上玩</view>
+        </view>
+      </view>
+      <view class="list_item" wx:elif="{{item.type==0}}">
+        <navigator bindtap='add_data' data-id="{{item.appid}}" class="navigator" target="miniProgram" open-type="navigate" app-id="{{item.appid}}" path="{{item.page}}" extra-data="" version="release" url="/pages/index/index"></navigator>
+        <view class="list_bg">
+          <image class="banner" src="{{item.banner}}"></image>
+          <view class="bg_title">{{item.intro}}</view>
+        </view>
+        <view class="list_info">
+          <image class="logo" src="{{item.logo}}"></image>
+          <view class="list_title">{{item.title}}</view>
+          <view class="list_btn">马上玩</view>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<navigator  target="miniProgram" open-type="navigate" app-id="{{page_list.appid}}" path="{{page_list.page}}" extra-data="" version="release"  url="/pages/recommend/recommend">
+    <image mode='widthFix' class="push_img" src="{{page_list.img}}" />
+</navigator>
+
+<view class='home' bindtap='goIndex'>返回首页</view>

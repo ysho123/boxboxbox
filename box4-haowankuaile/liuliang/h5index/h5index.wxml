@@ -1,0 +1,3 @@
+<!--pages/h5index/h5index.wxml-->
+
+<web-view src="{{allsrc}}"></web-view>

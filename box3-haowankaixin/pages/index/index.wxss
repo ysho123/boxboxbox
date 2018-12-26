@@ -1,0 +1,70 @@
+/* pages/index/index.wxss */
+.index{
+  padding-top: 20rpx;
+}
+.one_view{
+  width: 690rpx;
+  height: 466rpx;
+  border-radius: 10rpx;
+  box-shadow:0 0 20rpx rgba(0,0,0,0.2);
+  -webkit-box-shadow:0 0 20rpx rgba(0,0,0,0.2);
+  margin: 0 auto; 
+  padding-top: 60rpx;
+  padding-left: 60rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.box_item{ 
+  height: 56rpx;
+  border-radius: 10rpx;
+  background: #e8e8e8;
+  margin-bottom: 24rpx;
+}
+.first_box{
+  width: 286rpx;  
+  background: linear-gradient(to right, #ffd428 , #ffe88a); /* 标准的语法 */
+  background: -webkit-linear-gradient(to right, #ffd428 , #ffe88a); 
+  position: relative;
+}
+.icon_select{
+  position: absolute;
+  width: 42rpx;
+  height: 28rpx;
+  left: 16rpx;
+  top: 14rpx;
+}
+.second_box{
+  width: 520rpx;  
+}
+.third_box{
+  width: 570rpx;
+}
+.yellow_box{
+  width: 570rpx;
+  height: 90rpx;
+  background: #ffd428;
+  margin-top: 40rpx;
+  text-align: center;
+  color: #000;
+  font-size: 32rpx;
+  line-height: 90rpx;
+}
+.mt_40{
+  margin-top: 40rpx;
+}
+.hit_box{
+  text-align: center;
+  cursor: pointer;
+}
+.hit_box text{
+  font-size: 28rpx;
+  color: #262626;
+  text-decoration: underline;
+  padding-left: 10rpx;
+}
+.icon_hit{
+  width: 32rpx;
+  height: 34rpx;
+  vertical-align: middle;
+}
