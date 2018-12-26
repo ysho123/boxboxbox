@@ -1,0 +1,53 @@
+1.分组获取code
+
+https://xcx.xc29.cn/source/plugin/fenzu/getCode.php?code=?						GET请求
+
+
+
+2.保存用户信息接口
+
+https://xcx.xc29.cn/source/plugin/fenzu/saveUserInfo.php?openid=?&nickname=?&imageurl=?			GET请求
+
+
+3.检查用户有没有头像昵称
+
+https://xcx.xc29.cn/source/plugin/fenzu/checkUserInfo.php?openid=?					GET请求
+
+
+4.创建接口
+
+https://xcx.xc29.cn/source/plugin/fenzu/createGroupActive.php?openid=?&title=?&join_num=?&group_num=?	POST请求
+
+
+
+5.判断用户是否参与过这个项目
+
+https://xcx.xc29.cn/source/plugin/fenzu/checkUserJoinActive.php?openid=?&aid=?				GET请求
+
+
+
+6.用户触发分组
+
+https://xcx.xc29.cn/source/plugin/fenzu/joinGroup.php?openid=?&nickname=?&headimgurl=?&aid=?		GET请求
+
+
+
+7.获取结果
+
+https://xcx.xc29.cn/source/plugin/fenzu/getActiveGroup.php?openid=?&aid=?				GET请求
+
+
+8.生成二维码
+
+https://xcx.xc29.cn/source/plugin/fenzu/getQrcode.php?para=?&title=?&head=?				GET请求		路径需要提前告知后台
+
+
+9.用户获取我的
+
+https://xcx.xc29.cn/source/plugin/fenzu/getUserJoinActiveList.php?openid=?				GET请求		
+
+未完成： 首页      右上角“抓阄规则”-》“分组规则”
+	 goPage里  底部 “快分享给好友，一起分组吧”
+	 结果页    “创建抽签”-》 “创建分组”          
+	 二维码 ： 加上活动名称  
+	我的页  ： 前面那个小标签还是抓阄              done

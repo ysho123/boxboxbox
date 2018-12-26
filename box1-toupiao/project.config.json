@@ -1,0 +1,66 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.1",
+	"appid": "wx3bcc8e38137ed70d",
+	"projectname": "toupiao",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 3,
+			"list": [
+				{
+					"id": 0,
+					"name": "222",
+					"pathName": "pages/push/push",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "votePage",
+					"pathName": "pages/votepage/votepage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "liuliang",
+					"pathName": "liuliang/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "qiliang",
+					"pathName": "liuliang/qiliang/qiliang"
+				}
+			]
+		}
+	}
+}

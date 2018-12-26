@@ -1,0 +1,269 @@
+/* pages/votepage/votepage.wxss */
+.votepage{
+  background: #fff; 
+}
+.v_main{
+  padding-left: 40rpx;
+  position: relative;
+}
+.share_btn_s{
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  top: 50rpx;
+  right: 40rpx;
+}
+.share_btn_s[plain]{
+  border:0px; 
+}
+.v_title{
+  width: 580rpx;
+  font-size: 44rpx;
+  color: #333;
+  font-weight: bold;
+  padding-top: 60rpx;
+}
+.v_intro{
+  font-size: 34rpx;
+  color: #333;
+  padding-top: 34rpx;
+}
+.yellow{
+  color: #fecb00;
+}
+.v_content{
+  margin-top:70rpx;
+}
+.radio_item{
+  font-size: 28rpx;
+  color: #333;
+}
+.radio_top,.radio_bottom,.v_creator,.share_box{
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+.radio_top{
+  margin-bottom: 12rpx;
+  -webkit-box-align: center;
+}
+.radio{
+  width: 32rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+  display: inline-block;
+}
+.nullbox{
+  display: inline-block;
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  border: 1px solid #d1d1d1;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-right: 16rpx;
+}
+.radio_top text{
+  line-height: 32rpx;
+}
+.radio_bottom{
+  margin-bottom: 34rpx;
+}
+.radio_item:last-child .radio_bottom{
+  margin-bottom: 0;
+}
+.radio_lf,.v_time{
+  -webkit-box-flex: 1;
+}
+.radio_lf text{
+  display: inline-block;
+  width: 500rpx;
+}
+.radio_rt{
+  padding-right: 36rpx;
+}
+.progress_bar{
+  width: 589rpx;
+  height: 50rpx;
+  background: #d8d8d8;
+  border-left: 1px solid #b7b7b7;
+  position: relative;
+}
+.progress_yellow{
+  height: 50rpx;
+  position: absolute;
+  left: -1px;
+  top: 0;
+  background: #ffd428;
+}
+.v_creator{
+  padding-top: 28rpx ;
+  font-size: 24rpx;
+  color: #999;
+  -webkit-box-align: center;
+}
+.creator_pic{
+  width:48rpx;
+  height: 48rpx;
+  border-radius: 50%; 
+  margin:0 14rpx;
+}
+.v_time{
+  text-align: right;
+  padding-right: 36rpx;
+}
+.user_title{
+  font-size: 24rpx; 
+  padding-bottom: 30rpx;
+  padding-top: 52rpx; 
+}
+.user_pic{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  margin-right: 18rpx;
+}
+.v_btn{
+  width: 540rpx;
+  height: 88rpx;
+  background-color:#ffd428;
+  font-size: 36rpx;
+  border-radius:10rpx;
+  opacity: 1;
+  margin-top: 50rpx;
+  
+}
+.v_btn[plain]{
+  color: #000;
+  background: #ffd428;
+  border: 1px solid #ffd428; 
+}
+.share_box{
+  margin-top: 50rpx;
+  padding-bottom: 72rpx;
+  -webkit-box-pack: center;
+}
+.share_box text{
+  font-size: 32rpx;
+  color: #333;
+  line-height: 44rpx;
+}
+.share_wx{
+  width: 44rpx;
+  height: 36rpx;
+  vertical-align: middle;
+  margin-right: 14rpx;
+}
+.share_box view:first-child{
+  position: relative;
+}
+.wx_share_btn{
+  height:50rpx;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 220rpx;
+
+}
+.wx_share_btn[plain]{
+
+  border: 0; 
+}
+.share_pyq{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+  margin-left: 54rpx;
+  margin-right: 14rpx;
+}
+.share_bg{
+  position: fixed;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.share_wp{
+  position: fixed;
+  bottom:40rpx;
+  left:30rpx;
+  width: 690rpx;
+  height: 304rpx;
+  border-radius: 16rpx;
+  background: #f8f8f8;
+  box-shadow:0 0 20rpx rgba(0,0,0,0.2);
+  -webkit-box-shadow:0 0 20rpx rgba(0,0,0,0.2);
+  text-align: center;
+}
+.share_wp view{
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  color: #000;
+}
+.share_wp view:nth-child(3){
+  border-top:2rpx solid #efeff4;
+  border-bottom:2rpx solid #efeff4;
+}
+.share_btn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 690rpx;
+  height: 100rpx;
+}
+.share_btn[plain]{
+  border: 1px solid #f8f8f8; 
+}
+/* 单选样式 */
+
+radio .wx-radio-input {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%; 
+}
+radio .wx-radio-input.wx-radio-input-checked::before {
+  font:normal normal normal 14rpx/1 "weui";
+  content:"\EA08";
+  font-size:32rpx;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -48%) scale(0.73);
+  -webkit-transform:translate(-50%, -48%) scale(0.73);
+}
+/* 多选样式 */
+checkbox .wx-checkbox-input{ 
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;  
+}
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #ffd428;
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  border: 1px solid #ffd428;
+}
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  font:normal normal normal 14rpx/1 "weui";
+  content:"\EA08";
+  font-size:32rpx;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -48%) scale(0.73);
+  -webkit-transform:translate(-50%, -48%) scale(0.73);
+}
+
+.refreshBtn{
+  text-align: center;
+  color:  #ffd428;
+  font-size: 38rpx;
+  text-decoration: underline;
+}
+
+.btn_active{
+  transform: scale(1.1)
+}
