@@ -2,7 +2,7 @@
 var app = getApp();
 const LLUtils = require('../utils/LLUtils.js')
 Page({
-//加入审核
+
   /**
    * 页面的初始数据
    */

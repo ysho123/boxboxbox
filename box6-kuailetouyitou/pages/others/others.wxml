@@ -1,0 +1,15 @@
+<!--pages/others/others.wxml-->
+<view class="others">
+  <navigator class="others_item" target="miniProgram" wx:for="{{xcxlist}}" wx:key="xcxlist" data-appid="{{item.appid}}" app-id="{{item.appid}}" path="{{item.path}}">
+    <image class="xcx_pic" src="{{item.image}}"></image>
+    <view class="item_mid">
+      <view class="xcx_title">
+        <text>{{item.name}}</text>
+        <image class="icon_star" wx:for="{{5}}" wx:key="img" src="../../images/other_star.png"></image>
+      </view>
+      <view class="intro">{{item.intro}}</view>
+    </view>
+    <image class='icon_rtarr' src='../../images/other_arrow.png'></image>  
+  </navigator>
+</view>
+ 

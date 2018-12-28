@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="index">
+  <view class="one_view" bindtap='goCreatepage' data-type="1">
+    <view class="first_box box_item"><image class="icon_select" src='../../images/index_select.png'></image></view>
+    <view class="second_box box_item"></view>
+    <view class="third_box box_item"></view>
+    <view class="yellow_box box_item">单选投票</view>
+  </view>
+  <view class="one_view mt_40" bindtap='goCreatepage' data-type="2">
+    <view class="first_box box_item"><image class="icon_select" src='../../images/index_select.png'></image></view>
+    <view class="second_box box_item"></view>
+    <view class="first_box third_box box_item"><image class="icon_select" src='../../images/index_select.png'></image></view>
+    <view class="yellow_box box_item">多选投票</view>
+  </view>
+  <!-- <view class="hit_box mt_40" bindtap='goOthers'>
+    <image class="icon_hit" src='../../images/index_light.png'></image>
+    <text>点击发现更多有趣的小程序</text>
+  </view> -->
+  
+  <saveUserInfo></saveUserInfo>
+</view>

@@ -15,7 +15,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#ffD428",
-    "navigationBarTitleText": "创建一个意见收集",
+    "navigationBarTitleText": "投票",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {

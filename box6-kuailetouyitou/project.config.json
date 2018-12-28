@@ -13,12 +13,12 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.4.1",
-	"appid": "wxae100849482c2858",
-	"projectname": "FUQIzaixian",
+	"appid": "wx0e88fa5ee34b9f45",
+	"projectname": "box6-kuailetouyitou",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -33,28 +33,34 @@
 			"list": []
 		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
 			"current": 2,
 			"list": [
 				{
-					"id": -1,
-					"name": "result",
-					"pathName": "pages/result/result",
-					"query": ""
-				},
-				{
-					"id": 1,
-					"name": "test",
-					"pathName": "pages/suanming/suanming",
+					"id": 0,
+					"name": "222",
+					"pathName": "pages/push/push",
 					"query": ""
 				},
 				{
 					"id": -1,
-					"name": "suanming",
-					"pathName": "pages/suanming/suanming"
+					"name": "votePage",
+					"pathName": "pages/votepage/votepage",
+					"query": ""
+				},
+				{
+					"id": 2,
+					"name": "liuliang",
+					"pathName": "liuliang/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "qiliang",
+					"pathName": "liuliang/qiliang/qiliang",
+					"query": ""
 				}
 			]
 		}

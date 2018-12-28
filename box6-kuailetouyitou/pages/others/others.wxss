@@ -1,0 +1,48 @@
+/* pages/others/others.wxss */
+.others_item{
+  width: 690rpx;
+  height: 194rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-align: center;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  padding-left: 20rpx;
+  
+}
+.xcx_pic{
+  width: 120rpx;
+  height: 120rpx;
+}
+.xcx_title text{
+  font-size: 36rpx;
+  color: #000;
+  padding-right:16rpx;
+  line-height: 56rpx;
+}
+.item_mid{
+  -webkit-box-flex: 1;
+  margin-left: 20rpx;
+}
+.icon_star{
+  width: 28rpx;
+  height: 28rpx;
+}
+.icon_rtarr{
+  width: 18rpx;
+  height: 34rpx;
+  margin-right: 30rpx;
+  margin-left: 34rpx;
+}
+.intro{
+  font-size: 26rpx;
+  color: #666;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellispsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

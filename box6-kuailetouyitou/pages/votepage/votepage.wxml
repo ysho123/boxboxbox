@@ -1,0 +1,100 @@
+<!--pages/votepage/votepage.wxml-->
+<view class="votepage">
+<form bindsubmit="bmSubmit" report-submit="true">
+  <view class="v_main">
+    <image hidden='{{xcxHide==0}}' class="share_btn_s" src="../../images/detail_forward.png"></image>
+    <button hidden='{{xcxHide==0}}' class="share_btn_s" plain="true" bindtap='shareClick'></button>
+    <view class="v_title">{{data.title}}</view>
+    <view class="v_intro">{{data.instru}} <text class="yellow">[{{data.type==1?"单选":"多选"}}]</text><text class="yellow">{{data.isfinish==1?"[已结束]":""}}</text></view>
+    <view class="v_content">
+        <!-- 单选 -->
+        <radio-group class="radio-group" hidden="{{data.type==2}}" bindchange="radioChange">
+          <view class="radio_item" wx:for="{{data.commentlist}}" wx:key="commentlist">
+            <view class='radio_top'>
+              <view class="radio_lf">
+                <radio hidden='{{data.isfinish||data.isVote}}'  value="{{item.cid}}" checked="{{item.checked}}" color='#ffd428'/>
+                <text>{{item.comment}}</text>
+              </view>
+              <view class="radio_rt">
+                <text>({{item.votenum}}票)</text>
+              </view>
+            </view>
+            <view class='radio_bottom'>
+              <view class="radio_lf"> 
+                <view class="progress_bar">
+                  <view class="progress_yellow" style="width:{{item.widthNum}}%; "></view>
+                </view>
+              </view>
+              <view class="radio_rt">
+                <text>{{item.widthNum}}%</text>
+              </view>
+            </view>
+          </view> 
+        </radio-group>
+
+        <!-- 多选 -->
+        <checkbox-group  hidden="{{data.type==1}}" bindchange="checkChange">
+          <view class="radio_item" wx:for="{{data.commentlist}}" wx:key="commentlist">
+            <view class='radio_top'>
+              <view class="radio_lf" >
+                <checkbox hidden='{{data.isfinish||data.isVote}}' value="{{item.cid}}" checked="{{item.checked}}" color='#fff' />
+                <text>{{item.comment}}</text>
+                <label for="myCheck"></label>
+              </view>
+              <view class="radio_rt">
+                <text>({{item.votenum}}票)</text>
+              </view>
+            </view>
+            <view class='radio_bottom'>
+              <view class="radio_lf"> 
+                <view class="progress_bar">
+                  <view class="progress_yellow" style="width:{{item.widthNum}}%"></view>
+                </view>
+              </view>
+              <view class="radio_rt">
+                <text>{{item.widthNum}}%</text>
+              </view>
+            </view>
+          </view>
+        </checkbox-group>
+    </view>
+    <view class="v_creator">
+      <view>发起人：</view>
+      <image class="creator_pic" src="{{imageurl!=null?imageurl:'../../images/userpic.png'}}"></image>
+      <view>{{data.nickname}}</view>
+      <view class="v_time">(截止时间：{{data.overtime}})</view>
+    </view>
+    <view class="v_userlist" hidden='{{data.ishidden==1}}'>
+      <view class="user_title">已有{{data.totalNum}}人参与投票</view>
+      <view>
+        <image class="user_pic" wx:for="{{data.peoplelist}}"  wx:key="user_pic" src="{{item.imageurl}}"></image>
+      </view>
+    </view>
+  </view>
+  <button hidden='{{data.isfinish||data.isVote}}' class="v_btn" plain="true" form-type='submit'>投票</button>
+  <view class='refreshBtn' bindtap='refreshResult' hover-class="btn_active" hover-stay-time="300" hidden='{{!(data.isfinish||data.isVote)}}'>刷新结果</view>
+  <view class="share_box">
+    <view>
+      <image class="share_wx" src='../../images/detail_btn_forward.png'></image> 
+      <text>发给好友</text>
+      <button open-type="share"  class="wx_share_btn" plain="true"></button>
+    </view>
+    <view bindtap='shareClick' hidden='{{xcxHide==0}}'>
+      <image class="share_pyq" src='../../images/detail_btn_friend.png'></image> 
+      <text>转发朋友圈</text>
+    </view>
+  </view>
+  <view class="share_bg" bindtap='shareClick' hidden='{{shareBox}}'>
+    <view class="share_wp">
+    <view catchtap='shareBtn'>
+      <button open-type="share"  class="share_btn" plain="true" style='display:block;height:100rpx;line-height:100rpx;font-size:32rpx;color:#000'>转发好友</button>
+    </view>  
+    <view catchtap='pyqClick'>生成朋友圈分享图</view>
+     <view catchtap='ewmClick'>生成二维码</view> 
+  </view>
+  </view>
+  </form>
+
+  <saveUserInfo></saveUserInfo>
+</view>
+
