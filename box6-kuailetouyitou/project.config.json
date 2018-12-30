@@ -18,7 +18,7 @@
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"scripts": {},
+	"isGameTourist": false,
 	"condition": {
 		"search": {
 			"current": -1,
@@ -33,32 +33,21 @@
 			"list": []
 		},
 		"game": {
+			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": -1,
 			"list": [
 				{
 					"id": 0,
-					"name": "222",
-					"pathName": "pages/push/push",
-					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "votePage",
-					"pathName": "pages/votepage/votepage",
-					"query": ""
-				},
-				{
-					"id": 2,
-					"name": "liuliang",
+					"name": "列表",
 					"pathName": "liuliang/index/index",
 					"query": ""
 				},
 				{
-					"id": -1,
-					"name": "qiliang",
+					"id": 1,
+					"name": "起量",
 					"pathName": "liuliang/qiliang/qiliang",
 					"query": ""
 				}

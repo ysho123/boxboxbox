@@ -1,53 +1,41 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/createpage/createpage",
-    "pages/votepage/votepage",
-    "pages/mypage/mypage",
-    "pages/tzpage/tzpage",
-    "pages/push/push",
-    "pages/others/others",
+    "pages/goPage/goPage",
+    "pages/result/result",
+    "pages/mine/mine",
     "liuliang/h5index/h5index",
     "liuliang/index/index",
     "liuliang/qiliang/qiliang",
     "liuliang/push/push"
   ],
   "window": {
+    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#ffD428",
-    "navigationBarTitleText": "投票",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "开心分组小工具",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "backgroundColor": "#fff",
-    "color": "#999",
-    "selectedColor": "#ffD428",
+    "color": "#696969",
+    "selectedColor": "#FFD700",
+    "backgroundColor": "#FFFFFF",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/menu_home_2.png",
-        "selectedIconPath": "images/menu_home_1.png"
+        "text": "分组",
+        "iconPath": "images/Tab/index_gray.png",
+        "selectedIconPath": "images/Tab/index_blink.png"
       },
       {
-        "pagePath": "pages/mypage/mypage",
+        "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "images/menu_my_2.png",
-        "selectedIconPath": "images/menu_my_1.png"
+        "iconPath": "images/Tab/mine_gray.png",
+        "selectedIconPath": "images/Tab/mine_blink.png"
       }
     ]
   },
   "usingComponents": {
-    "saveUserInfo": "/component/saveUserInfo"
-  },
-  "navigateToMiniProgramAppIdList": [
-    "wx29dad3c781aa8392",
-    "wx73caeb48e7359782",
-    "wxfd9e3bfc1c8e7ab0",
-    "wx594916c44759c264",
-    "wx23f8dd2d800bcf42",
-    "wx463953cb83a580ed",
-    "wxf1e4f980142cf270",
-    "wx43728d5e0bec2447"
-  ]
+    "sharedComponent": "component/sharedComponent/sharedComponent"
+  }
 }

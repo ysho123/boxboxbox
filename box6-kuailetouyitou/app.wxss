@@ -1,28 +1,15 @@
 /**app.wxss**/
 page{
-   background:#f5f5f5;
-}
-
-.container {
+  width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 200rpx 0;
-  box-sizing: border-box;
-} 
-
-.message {
-    width: 100rpx;
-    height: 100rpx;
-    background-image: url("https://www.wtop06.cn/static/zb/msg.png");
-    background-size: cover;
-    border:0;
-    position: fixed;
-    right: 10rpx;
-    bottom:10rpx;
 }
-.message[plain]{
-   border: 0;
+
+/**组件样式**/
+.sharePicArea{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background:rgba(0,0,0,0.5);
+  top:0;
+  left: 0;
 }

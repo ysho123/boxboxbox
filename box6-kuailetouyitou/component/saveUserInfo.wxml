@@ -1,2 +1,0 @@
-<!--component/saveUserInfo.wxml-->
-<button open-type="getUserInfo"  bindgetuserinfo='getUserInfo' class='getUserInfo' wx:if="{{!dbHasUserInfo}}"></button>

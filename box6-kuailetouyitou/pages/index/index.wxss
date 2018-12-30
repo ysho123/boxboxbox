@@ -1,70 +1,240 @@
-/* pages/index/index.wxss */
-.index{
-  padding-top: 20rpx;
-}
-.one_view{
-  width: 690rpx;
-  height: 466rpx;
-  border-radius: 10rpx;
-  box-shadow:0 0 20rpx rgba(0,0,0,0.2);
-  -webkit-box-shadow:0 0 20rpx rgba(0,0,0,0.2);
-  margin: 0 auto; 
-  padding-top: 60rpx;
-  padding-left: 60rpx;
-  box-sizing: border-box;
-  background: #fff;
+.mainWrapper{
+  width: 100%;
+  height: 100%;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/bg.png');
+  background-size:750rpx 1334rpx;
+  display: flex;
+  flex-direction: column;
 }
 
-.box_item{ 
-  height: 56rpx;
-  border-radius: 10rpx;
-  background: #e8e8e8;
-  margin-bottom: 24rpx;
+.upArea{
+  width: 100%;
+  height: 15%;
+  /* background-color: red;
+  opacity: 0.4; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.first_box{
-  width: 286rpx;  
-  background: linear-gradient(to right, #ffd428 , #ffe88a); /* 标准的语法 */
-  background: -webkit-linear-gradient(to right, #ffd428 , #ffe88a); 
+
+.index_title{
+  width: 531rpx;
+  height: 88rpx;
+}
+
+.middleArea{
+  width: 100%;
+  height: 70%;
+  /* background-color: green; */
+  /* opacity: 0.4;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.middle_container{
+  width: 579rpx;
+  height: 651rpx;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/container.png');
+  background-size:579rpx 651rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
-.icon_select{
+
+.middle_submitBtn{
+  width: 342rpx;
+  height: 148rpx;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/submitBtn.png');
+  background-color: transparent;
+  background-size:342rpx 148rpx;
+  margin-top: 10rpx;
+}
+
+/* .middle_submitBtn::after{
+  border: none; 
+} */
+
+.hint{
+  width: 134rpx;
+  height: 77rpx;
+  background-image: url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/zhuajiuguize.png');
+  background-size: 134rpx 77rpx;
+  background-repeat :no-repeat;
+  background-position : center;
   position: absolute;
-  width: 42rpx;
-  height: 28rpx;
-  left: 16rpx;
-  top: 14rpx;
+  right: 0;
+  top: -20rpx;
 }
-.second_box{
-  width: 520rpx;  
+
+.fuhao_active{
+  transform: scale(1.5);
 }
-.third_box{
-  width: 570rpx;
+
+.btn_active{
+  transform: scale(1.1);
 }
-.yellow_box{
-  width: 570rpx;
-  height: 90rpx;
-  background: #ffd428;
-  margin-top: 40rpx;
+
+.middle_input{
+  width: 80%;
+  height: 30%;
+  margin-top:10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.zhuti{
+  width: 68rpx;
+  height: 33rpx;
+}
+
+.shurukuang{
+  width: 332rpx;
+  height: 140rpx;
+  border-radius: 24rpx;
+  border: solid black 4rpx;
+  background-color: white;
+}
+
+.middle_join{
+  width: 80%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.canyurenshu{
+  width: 117rpx;
+  height: 36rpx;
+}
+
+.fzzs{
+  width: 122rpx;
+  height: 31rpx;
+}
+
+.countArea{
+  width: 250rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fuhaoArea{
+  width: 20rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  display: flex;
+  align-items:center;
+  /* background-color: red; */
+}
+
+.fuhaoArea:active{
+  transform: scale(1.1);
+}
+
+.countArea_minus{
+  width: 30rpx;
+  height: 80rpx;
+  background-image: url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/minus.png');
+  background-size: 26rpx 7rpx;
+  background-repeat :no-repeat;
+  background-position : center;
+}
+
+/* .countArea_minus:active{
+  transform: scale(1.3);
+} */
+
+.peopleNum{
+  width: 115rpx;
+  height: 50rpx;
+  border: solid 4rpx black;
+  border-radius: 10rpx;
   text-align: center;
-  color: #000;
-  font-size: 32rpx;
-  line-height: 90rpx;
+  background-color: white;
 }
-.mt_40{
-  margin-top: 40rpx;
+
+.countArea_add{
+  width: 30rpx;
+  height: 80rpx;
+  background-image: url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/add.png');
+  background-size: 25rpx 27rpx;
+  background-repeat :no-repeat;
+  background-position : center;
 }
-.hit_box{
-  text-align: center;
-  cursor: pointer;
+
+.middle_choose{
+  width: 80%;
+  height: 15%;
+  background-color: blue;
+  margin-bottom:50rpx;
 }
-.hit_box text{
-  font-size: 28rpx;
-  color: #262626;
-  text-decoration: underline;
-  padding-left: 10rpx;
+
+.bottomArea{
+  width: 100%;
+  height: 15%;
+  /* background-color: yellow; */
+  opacity: 0.4;
 }
-.icon_hit{
-  width: 32rpx;
-  height: 34rpx;
-  vertical-align: middle;
+
+.hintWrapper{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left:  0;
+  background-color:rgba(0,0,0,0.8); /* IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂，但解析为透明 */
+  background-size:750rpx 1334rpx; 
+  z-index: 100;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hintContainer{
+  width: 510rpx;
+  height: 379rpx;
+  background-image: url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/hintContainer.png');
+  background-size: 510rpx 379rpx;
+  position: relative;
+}
+
+.hintContainer_show{
+  animation: showAction 1s 1;
+}
+
+@keyframes showAction{
+  from{
+    transform: scale(0.1)
+  }
+  to{
+    transform: scale(1)
+  }
+}
+
+.hint_content{
+  width: 418rpx;
+  height: 177rpx;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform:translate( -50%, -50%);
+}
+
+.hint_close{
+  position: absolute;
+  width: 179rpx;
+  height: 168rpx;
+  top: -50rpx;
+  right: -50rpx;
 }
