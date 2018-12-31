@@ -1,0 +1,54 @@
+<!--index.wxml-->
+<view class='mainWrapper'>
+  <view class='upArea'>
+    <view class='ac_Name'>{{topInfo.ac_Name}}</view>
+    <view class="topTable">
+      <view class='table_title'>
+        <text class='tb_text'>总人数</text>
+        <text class='tb_text center_border'>分组组数</text>
+        <text class='tb_text'>未参与人数</text>
+      </view>
+      <view class='table_content'>
+        <text class='tb_text'>{{topInfo.sunNum}}</text>
+        <text class='tb_text center_border'>{{topInfo.groupNum}}</text>
+        <text class='tb_text'>{{topInfo.unJionNum}}</text>
+      </view>
+    </view>
+    <!-- <view class='upArea_result'>你被分到第一组</view> -->
+  </view>
+
+  <view class='middleArea'>
+    <view class='middle_container'>
+        <view class='backIndex' hover-class='btn_active' hover-stay-time='100' bindtap='backIndex'></view>
+        <view class='checkAgain' hover-class='btn_active' hover-stay-time='100' bindtap='backIndex'></view>
+
+        <scroll-view class='groupList' scroll-y='1' >
+          <view class='group_item' wx:for="{{listInfo}}" wx:for-item="groupItem" wx:for-index="groupIndex" wx:key="groupItem">
+            <view class='listItem_title'>第{{groupIndex+1}}组</view>
+            <view class='userList' style="{{groupItem.length>=5 ? '' : 'justify-content:center'}}">
+              <view class='userIno' wx:for="{{groupItem}}" wx:for-item="userItem" wx:key="useritem">
+                <image src='{{userItem.headimgurl}}' class='avatar'></image>
+                <view class='nickName'>{{userItem.nickname == '9999' ?  '未加入' : userItem.nickname}}</view>
+              </view>
+            </view>
+            <view class="divLine"></view>
+          </view>
+        </scroll-view>
+    </view>
+
+    <view class='refresh' hover-class='btn_active' hover-stay-time='100' bindtap='refresh'>刷新结果</view>
+
+    <view class='middleShareArea'>
+        <button class='middle_shareBtn2' hover-class='btn_active' bindtap='getShareImage' wx:if='{{!shenhe}}'></button>
+        <button class='middle_shareBtn1' hover-class='btn_active' open-type='share'></button>
+    </view>
+  </view>
+
+  <!-- <view class='bottomArea'>
+
+  </view> -->
+
+  <!-- 生成分享图组件 -->
+  <sharedComponent class='sharePicArea' wx:if='{{showSharedPic}}' ac_id='{{ac_id}}' ac_Name='{{ac_Name}}'  bind:closeComponent="closeComponent"></sharedComponent>
+
+</view>

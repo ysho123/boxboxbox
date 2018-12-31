@@ -1,0 +1,240 @@
+.mainWrapper{
+  width: 100%;
+  height: 100%;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/index/bg.png');
+  background-size:750rpx 1334rpx;
+  display: flex;
+  flex-direction: column;
+}
+
+.upArea{
+  width: 100%;
+  height: 20%;
+  /* background-color: red;
+  opacity: 0.4; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ac_Name{
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #feeb28;
+}
+
+.upArea_result{
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.topTable{
+  width: 518rpx;
+  height: 140rpx;
+  border: solid black 2rpx;
+  border-radius: 10rpx;
+  box-sizing: border-box;
+}
+
+.table_title{
+  width: 100%;
+  height: 70rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  border-bottom: solid black 2rpx;
+  background-color: #feeb28;
+  box-sizing:inherit;
+}
+
+.table_content{
+  width: 100%;
+  height: 67rpx;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+  background-color: white;
+  box-sizing:inherit;
+}
+
+.tb_text{
+  display: inline-block;
+  width: 170rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  color: 424b4f;
+  font-size: 26rpx;
+  vertical-align: bottom;
+  box-sizing:inherit;
+}
+
+.center_border{
+  border-left: solid 2rpx black;
+  border-right : solid 2rpx black;
+}
+
+.middleArea{
+  width: 100%;
+  height: 80%;
+  /* background-color: green; */
+  /* opacity: 0.4;  */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+
+.backIndex{
+  width: 182rpx;
+  height: 171rpx;
+  background-image: url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/goPage/indexBtn.png');
+  background-size: 182rpx 171rpx;
+  background-repeat :no-repeat;
+  background-position : center;
+  position: absolute;
+  right: -30rpx;
+  top: -30rpx;
+}
+
+.middle_container{
+  width: 626rpx;
+  height: 772rpx;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/fenzu/result/bg.png');
+  background-size:100% 100%;
+  background-repeat:no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: 38rpx;
+}
+
+.groupList{
+  width: 90%;
+  height: 100%;
+}
+
+.group_item{
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center; 
+}
+
+.listItem_title{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #424b4f;
+  margin-top: 30rpx;
+}
+
+.userList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16rpx;
+  width:100%;
+  overflow:scroll;
+}
+
+.userList::-webkit-scrollbar {
+  display:none;
+}
+
+.avatar{
+  width: 88rpx;
+  height: 88rpx;
+  border-radius: 44rpx;
+}
+
+.userIno{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 4rpx;
+}
+
+.nickName{
+  font-size: 26rpx;
+  color: #333;
+  font-weight: bold;
+  width: 104rpx;
+  height: 34rpx;
+  overflow: hidden;
+  /* position:relative; */
+  margin-top: 11rpx;
+  text-align:center;
+}
+
+.divLine{
+  margin-top: 30rpx;
+  background: #808080;
+  width: 90%;
+  height: 2rpx;
+}
+
+.refresh{
+  color: #FFFF00;
+  text-decoration: underline;
+}
+
+.middleShareArea{
+  width: 100%;
+  height: 120rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.middle_shareBtn1{
+  width: 268rpx;
+  height:90rpx;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/goPage/shareToFriend.png');
+  background-color: transparent;
+  background-size:268rpx 90rpx;
+  margin-top: 10rpx;
+}
+
+.middle_shareBtn2{
+  width: 268rpx;
+  height:90rpx;
+  background-image : url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/zhuajiu/goPage/shareToCircle.png');
+  background-color: transparent;
+  background-size:268rpx 90rpx;
+  margin-top: 10rpx;
+}
+
+.btn_active{
+  transform: scale(1.1);
+}
+
+.bottomArea{
+  width: 100%;
+  height: 10%;
+  /* background-color: yellow; */
+  opacity: 0.4;
+}
+
+.checkAgain{
+  width: 122rpx;
+  height: 122rpx;
+  background-image: url('https://game-1256868251.cos.ap-guangzhou.myqcloud.com/fenzu/result/checkAgain.png');
+  background-size: 122rpx 122rpx;
+  background-repeat :no-repeat;
+  background-position : center;
+  position: absolute;
+  right: -50rpx;
+  bottom: 20rpx;
+  animation: scaleButton 2s linear infinite;
+}
+
+@keyframes scaleButton{
+  0%   {transform: scale(0.9)}
+  25%  {transform: scale(1)}
+  50% {transform: scale(1.1)}
+  75%  {transform: scale(1)}
+  100% {transform: scale(0.9)}
+}
