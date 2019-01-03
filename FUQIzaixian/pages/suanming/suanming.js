@@ -14,23 +14,29 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log('h5页面options', options)
-    if (JSON.stringify(options) != "{}"){ 
-      console.log(options)
-      console.log(decodeURIComponent(options.web))
+
+    wx.switchTab({
+      url: '/pages/index/index',
+    });
+
+    
+    // console.log('h5页面options', options)
+    // if (JSON.stringify(options) != "{}"){ 
+    //   console.log(options)
+    //   console.log(decodeURIComponent(options.web))
   
-        this.setData({
-          allsrc: decodeURIComponent(options.web)
-        })
+    //     this.setData({
+    //       allsrc: decodeURIComponent(options.web)
+    //     })
       
-    } else {
-      console.log("kong")
-      this.setData({
-        // allsrc: 'https://sm.fb168.top/?ac=bazijp_wx',
-        allsrc: "https://sm.chuzx.com?ac=bazijp_wx"
-        // allsrc: "https://sm.yo91m.cn/?ac=bazijp_wx"
-      })
-    }
+    // } else {
+    //   console.log("kong")
+    //   this.setData({
+    //     // allsrc: 'https://sm.fb168.top/?ac=bazijp_wx',
+    //     allsrc: "https://sm.chuzx.com?ac=bazijp_wx"
+    //     // allsrc: "https://sm.yo91m.cn/?ac=bazijp_wx"
+    //   })
+    // }
   },
   onshow:function(){
 
