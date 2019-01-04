@@ -1,0 +1,56 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.4.3",
+	"appid": "wx28bfc9e2488f3870",
+	"projectname": "box13-%E6%A0%A1%E5%9B%AD%E6%8E%92%E5%BA%8F%E5%B0%8F%E5%B7%A5%E5%85%B7",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 1,
+			"list": [
+				{
+					"id": -1,
+					"name": "liuliang",
+					"pathName": "liuliang/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "qiliang",
+					"pathName": "liuliang/qiliang/qiliang"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,10 @@
+<!--pages/qiliang/qiliang.wxml-->
+<view class='qiliang_con'>
+  <image class='qiliang_img' src='{{liang_list.h5_index_img}}'  mode='widthFix'></image>
+  
+  <form class='qiliang_form' bindsubmit="todetails" report-submit="true">
+    <button class="formBtn" plain="true" form-type='submit' open-type='getUserInfo' bindgetuserinfo='getUserInfo' data-id="{{liang_list.id}}"  data-web_src="{{liang_list.h5_content_url}}" data-title="{{liang_list.title}}"></button>
+    <view class='start_btn'>{{h5_button_text}}</view>
+  </form>
+
+</view>
